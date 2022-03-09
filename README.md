@@ -24,7 +24,6 @@ The following command will (1) split the data and save them into the folder for 
 
 
 ```
-
 python3 dataset_split.py
 
 ```
@@ -39,7 +38,6 @@ To train the Transformer and generate definitions, use the following command:
 
 ```
 python definition_prepare.py --cuda --model trs --pretrain_emb --noam --label_smoothing --emb_dim 768 --hidden_dim 768 --latent_dim 600 --batch_size 8 --max_enc_steps 250
-
 ```
 
 The generated definitions will be saved as `test_def_gen.txt` under each DAG folder in the data folder.
@@ -61,7 +59,6 @@ Note that the code requires downloading the pretrained BioBERT before embedding 
 
 ```
 python3 bio_bert_emb_gen.py
-
 ```
 
 
@@ -98,7 +95,6 @@ Setting up correct paths in the `experiments.py`, then:
 
 ```
 python experiments.py --cuda --model trs --pretrain_emb --noam --label_smoothing --emb_dim 768 --hidden_dim 768 --latent_dim 600 --batch_size 8 --max_enc_steps 250
-
 ```
 
 **Note 3:** The embedding to each node is obtained by indexing the corresponding dictionary, where the index is obtained by the node dictionary. However, the key used by the embedding in this case is the actual string instead of numeric indices. An error may occur in this case. To fix it, simply using the terminoloy and definition names as the keys for indexing. However, the original codes for Node2Vec clean the input text (i.e. terminologies and definitions in this case). To match the keys used by the global embedding and the node dictionary, additional cleaning has to be done on the node dictionary. The script has corrected this.
