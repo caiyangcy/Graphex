@@ -6,7 +6,7 @@ f = open("data/vocab.txt", "r")
 f2 = open("vectors/embeddings.txt", "w")
 
 lines = f.readlines()
-biobert = BiobertEmbedding(model_path="/home/caiyang/Documents/Summer 2022 Materials/codes/Graphex/biobert_v1.1_pubmed_pytorch_model/")
+biobert = BiobertEmbedding(model_path="biobert_v1.1_pubmed_pytorch_model/")
 
 for l in tqdm( lines ):
     word_embeddings = biobert.word_vector(l[:-1])
