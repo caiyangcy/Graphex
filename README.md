@@ -25,7 +25,6 @@ The following command will (1) split the data and save them into the folder for 
 
 ```
 python3 dataset_split.py
-
 ```
 
 
