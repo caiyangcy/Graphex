@@ -1,8 +1,8 @@
-## Reproduction on Graphine: A Dataset for Graph-aware Terminology Definition Generation
+## Unofficial Reproduction on Graphine: A Dataset for Graph-aware Terminology Definition Generation
 
-This repo contains the reproduction on the paper: **Graphine: A Dataset for Graph-aware Terminology Definition Generation** from EMNLP 2021. 
+This repo contains the **Unofficial** reproduction on the paper: **Graphine: A Dataset for Graph-aware Terminology Definition Generation** from EMNLP 2021. 
 
-The code is based on the [original repo](https://github.com/zequnl/Graphex) with some modifications. The following subsections show the instructions for running the code by order. 
+The code is based on the [official repo](https://github.com/zequnl/Graphex) with some modifications. The following subsections show the instructions for running the code by order. 
 
 
 ## Data Preparation
